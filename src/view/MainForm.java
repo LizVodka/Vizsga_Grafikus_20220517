@@ -15,6 +15,7 @@ public class MainForm extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         numMax = new javax.swing.JSpinner();
@@ -47,6 +48,8 @@ public class MainForm extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Beállítások"));
 
         jLabel1.setText("körök száma 2 -");
+
+        numMax.setModel(new javax.swing.SpinnerNumberModel(5, 5, 10, 1));
 
         chbMent.setSelected(true);
         chbMent.setText("kilépéskor ment");
@@ -90,10 +93,13 @@ public class MainForm extends javax.swing.JFrame {
         btnIndit.setText("Kör indítása");
         btnIndit.setActionCommand("");
 
+        buttonGroup2.add(jRadioButton1);
         jRadioButton1.setText("Kő");
 
+        buttonGroup2.add(jRadioButton2);
         jRadioButton2.setText("Papír");
 
+        buttonGroup2.add(jRadioButton3);
         jRadioButton3.setText("Olló");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -265,6 +271,7 @@ public class MainForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIndit;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JCheckBox chbMent;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
